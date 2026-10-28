@@ -41,7 +41,6 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="action_exit"/>
   </widget>
   <widget class="QStatusBar" name="status_bar"/>
   <action name="action_exit">
