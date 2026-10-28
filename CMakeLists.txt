@@ -15,9 +15,12 @@ find_package(Qt6 6.10 REQUIRED COMPONENTS Widgets Help)
 
 qt_add_executable(qt-help-creator
     src/main.cpp
-    src/MainWindow.cpp
-    src/MainWindow.h
+    src/ui/main_window/main_window.cpp
+    src/ui/main_window/main_window.h
+    src/ui/main_window/main_window.ui
 )
+
+target_include_directories(qt-help-creator PRIVATE src)
 
 target_link_libraries(qt-help-creator
     PRIVATE Qt6::Widgets Qt6::Help
