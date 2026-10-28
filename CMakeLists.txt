@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 set(QT_ROOT "C:/Qt/6.10.2/msvc2022_static_x64")
 
@@ -20,7 +21,7 @@ qt_add_executable(qt-help-creator
     src/ui/main_window/main_window.ui
 )
 
-target_include_directories(qt-help-creator PRIVATE src)
+target_include_directories(qt-help-creator PRIVATE src ${CMAKE_CURRENT_BINARY_DIR})
 
 target_link_libraries(qt-help-creator
     PRIVATE Qt6::Widgets Qt6::Help

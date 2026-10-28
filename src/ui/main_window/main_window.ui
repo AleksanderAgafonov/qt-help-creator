@@ -14,8 +14,6 @@
    <string>Qt Help Creator</string>
   </property>
   <widget class="QWidget" name="central_widget"/>
-  <menu-bar name="menu_bar"/>
-  <addaction name="file_action"/>
   <widget class="QMenuBar" name="menu_bar">
    <property name="geometry">
     <rect>
@@ -62,11 +60,6 @@
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
-   <hints>
-    <hint>
-     <label>Exit</label>
-    </hint>
-   </hints>
   </connection>
  </connections>
 </ui>
