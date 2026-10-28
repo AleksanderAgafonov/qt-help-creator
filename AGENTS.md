@@ -4,14 +4,14 @@
 
 ### UI
 
-- Всегда используй `.ui` файлы (Qt Designer XML) для описания GUI.
-  Программный код не должен содержать вызовов `setWindowTitle`, `resize`, `addMenu`, `addAction`, `addToolBar`, `showMessage` и подобных для построения интерфейса — только логика.
+- Always use `.ui` files (Qt Designer XML) to describe the GUI.
+  Source code must not contain `setWindowTitle`, `resize`, `addMenu`, `addAction`, `addToolBar`, `showMessage` or similar GUI-building calls — only business logic.
 
-### Именование файлов
+### File naming
 
-- Все файлы — в `snake_case`: `main_window.h`, `main_window.cpp`, `main_window.ui`.
-- Вложенные каталоги — также в `snake_case`: `src/ui/main_window/`.
+- All files use `snake_case`: `main_window.h`, `main_window.cpp`, `main_window.ui`.
+- Nested directories also use `snake_case`: `src/ui/main_window/`.
 
-### Именование классов
+### Class naming
 
-- Классы — в `PascalCase`: `MainWindow`, `HelpEditor`, `DocumentModel`.
+- Classes use `PascalCase`: `MainWindow`, `HelpEditor`, `DocumentModel`.
