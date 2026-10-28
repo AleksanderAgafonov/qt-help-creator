@@ -6,7 +6,7 @@
 
 // ---------------------------------------------------------------------------
 
-main_window::main_window(QWidget *parent)
+MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui_(std::make_unique<Ui::MainWindow>())
 {
@@ -15,4 +15,4 @@ main_window::main_window(QWidget *parent)
 
 // ---------------------------------------------------------------------------
 
-main_window::~main_window() = default;
+MainWindow::~MainWindow() = default;

@@ -10,12 +10,12 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
-class main_window : public QMainWindow {
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit main_window(QWidget *parent = nullptr);
-    ~main_window() override;
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow() override;
 
 private:
     std::unique_ptr<Ui::MainWindow> ui_;
