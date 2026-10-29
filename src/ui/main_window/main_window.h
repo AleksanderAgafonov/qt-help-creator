@@ -18,7 +18,7 @@ public:
     ~MainWindow() override;
 
 private:
-    std::unique_ptr<Ui::MainWindow> ui_;
+    std::unique_ptr<Ui::MainWindow> _ui;
 };
 
 #endif // MAIN_WINDOW_H

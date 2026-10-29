@@ -15,3 +15,7 @@
 ### Class naming
 
 - Classes use `PascalCase`: `MainWindow`, `HelpEditor`, `DocumentModel`.
+
+### Private member variables
+
+- Private member variables are prefixed with `_`: `_ui`, `_model`, `_editor`.
