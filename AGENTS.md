@@ -19,3 +19,7 @@
 ### Private member variables
 
 - Private member variables are prefixed with `_`: `_ui`, `_model`, `_editor`.
+
+### GUI element names
+
+- All graphical widget names in `.ui` files use `camelCase`: `centralWidget`, `menuBar`, `menuFile`, `fileToolbar`, `statusBar`, `actionExit`.
