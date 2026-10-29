@@ -23,3 +23,7 @@
 ### GUI element names
 
 - All graphical widget names in `.ui` files use `camelCase`: `centralWidget`, `menuBar`, `menuFile`, `fileToolbar`, `statusBar`, `actionExit`.
+
+### CMakeLists.txt
+
+- Group source files into typed variables (`SOURCES`, `HEADERS`, `UI`) with a project-prefixed name (e.g. `QT_HELP_CREATOR_SOURCES`) before passing them to `qt_add_executable`.
