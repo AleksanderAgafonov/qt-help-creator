@@ -8,8 +8,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(QT_ROOT "C:/Qt/6.10.2/msvc2022_static_x64")
-
 find_package(Qt6 6.10 REQUIRED COMPONENTS Widgets Help)
 
 # qt_standard_project_setup  # removed — not available in static Qt 6.10.2
