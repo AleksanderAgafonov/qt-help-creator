@@ -27,3 +27,19 @@
 ### CMakeLists.txt
 
 - Group source files into typed variables (`SOURCES`, `HEADERS`, `UI`) with a project-prefixed name (e.g. `QT_HELP_CREATOR_SOURCES`) before passing them to `qt_add_executable`.
+
+### Brace style
+
+- Opening `{` and closing `}` must always be on their own line.
+  Exception: array/struct initializer lists.
+
+### Indentation
+
+- Code inside a `{}` block must be indented by 4 spaces.
+  Exception: array/struct initializer lists.
+
+### Namespace
+
+- Opening `namespace {` follows the same brace style rule (brace on its own line).
+- Namespaces should be closed with an inline comment: `} // namespace Foo`.
+- Unnamed namespaces and `namespace foo { ... }` on a single line are discouraged.
