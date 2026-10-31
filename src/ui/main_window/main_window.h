@@ -2,6 +2,7 @@
 #define MAIN_WINDOW_H
 
 #include <QMainWindow>
+
 #include <memory>
 
 QT_BEGIN_NAMESPACE

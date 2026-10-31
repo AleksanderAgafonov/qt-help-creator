@@ -43,3 +43,27 @@
 - Opening `namespace {` follows the same brace style rule (brace on its own line).
 - Namespaces should be closed with an inline comment: `} // namespace Foo`.
 - Unnamed namespaces and `namespace foo { ... }` on a single line are discouraged.
+
+### Includes
+
+1. **Order of blocks:** `#include` directives are grouped into three blocks in this order:
+   - Qt headers (`<QtModule/...>` or `<...>`)
+   - C++ standard library headers (`<...>`)
+   - Project local headers (`"..."`)
+   An empty line separates each block.
+
+2. **Sorting:** Within each block, headers are sorted alphabetically by full path.
+
+3. **Widget .cpp files:** Every `.cpp` file for a widget generated from a `.ui` file starts with exactly these two includes, without a blank line between them:
+   ```cpp
+   #include "main_window.h"
+   #include "ui_main_window.h"
+
+   ```
+   After this pair, an empty line follows, then the remaining blocks (Qt → C++ → local) follow per rules 1–2.
+
+4. **No duplication:** If a header is already `#include`d in the corresponding `.h` file, it must NOT be repeated in the `.cpp`.
+
+5. **Forward declarations:** Prefer forward declarations over `#include` whenever a full type definition is not needed at the point of use.
+
+6. **Placement:** Forward declarations are placed after all `#include` blocks and `QT_BEGIN_NAMESPACE` / `QT_END_NAMESPACE` wrappers, separated by blank lines before and after. They are sorted in the order they first appear in the `.cpp` file (same sorting rule as includes).
