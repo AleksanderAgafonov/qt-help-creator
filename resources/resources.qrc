@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style/main.qss</file>
+    </qresource>
+    <qresource lang="en">
+        <file>translation/qt_help_creator_en.ts</file>
+    </qresource>
+</RCC>
