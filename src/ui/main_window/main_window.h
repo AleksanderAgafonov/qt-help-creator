@@ -2,23 +2,26 @@
 #define MAIN_WINDOW_H
 
 #include <QMainWindow>
+
 #include <memory>
 
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui
+{
+    class MainWindow;
+} // namespace Ui
 QT_END_NAMESPACE
 
-class main_window : public QMainWindow {
+class MainWindow : public QMainWindow
+{
     Q_OBJECT
 
 public:
-    explicit main_window(QWidget *parent = nullptr);
-    ~main_window() override;
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow() override;
 
 private:
-    std::unique_ptr<Ui::MainWindow> ui_;
+    std::unique_ptr<Ui::MainWindow> _ui;
 };
 
 #endif // MAIN_WINDOW_H

@@ -1,18 +1,15 @@
 #include "main_window.h"
-
 #include "ui_main_window.h"
-
-#include <memory>
 
 // ---------------------------------------------------------------------------
 
-main_window::main_window(QWidget *parent)
+MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui_(std::make_unique<Ui::MainWindow>())
+    , _ui(std::make_unique<Ui::MainWindow>())
 {
-    ui_->setupUi(this);
+    _ui->setupUi(this);
 }
 
 // ---------------------------------------------------------------------------
 
-main_window::~main_window() = default;
+MainWindow::~MainWindow() = default;

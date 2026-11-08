@@ -8,17 +8,33 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(QT_ROOT "C:/Qt/6.10.2/msvc2022_static_x64")
-
 find_package(Qt6 6.10 REQUIRED COMPONENTS Widgets Help)
 
-# qt_standard_project_setup  # removed — not available in static Qt 6.10.2
+# ---------------------------------------------------------------------------
+# Sources
+# ---------------------------------------------------------------------------
 
-qt_add_executable(qt-help-creator
+set(QT_HELP_CREATOR_SOURCES
     src/main.cpp
     src/ui/main_window/main_window.cpp
+)
+
+set(QT_HELP_CREATOR_HEADERS
     src/ui/main_window/main_window.h
+)
+
+set(QT_HELP_CREATOR_UI
     src/ui/main_window/main_window.ui
+)
+
+# ---------------------------------------------------------------------------
+# Executable
+# ---------------------------------------------------------------------------
+
+qt_add_executable(qt-help-creator
+    ${QT_HELP_CREATOR_SOURCES}
+    ${QT_HELP_CREATOR_HEADERS}
+    ${QT_HELP_CREATOR_UI}
 )
 
 target_include_directories(qt-help-creator PRIVATE src ${CMAKE_CURRENT_BINARY_DIR})

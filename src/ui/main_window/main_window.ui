@@ -13,8 +13,8 @@
   <property name="windowTitle">
    <string>Qt Help Creator</string>
   </property>
-  <widget class="QWidget" name="central_widget"/>
-  <widget class="QMenuBar" name="menu_bar">
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -23,15 +23,15 @@
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_file">
+   <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="action_exit"/>
+    <addaction name="actionExit"/>
    </widget>
-   <addaction name="menu_file"/>
+   <addaction name="menuFile"/>
   </widget>
-  <widget class="QToolBar" name="file_toolbar">
+  <widget class="QToolBar" name="fileToolbar">
    <property name="windowTitle">
     <string>&amp;File</string>
    </property>
@@ -42,8 +42,8 @@
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QStatusBar" name="status_bar"/>
-  <action name="action_exit">
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
    <property name="text">
     <string>E&amp;xit</string>
    </property>
@@ -55,7 +55,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>action_exit</sender>
+   <sender>actionExit</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
